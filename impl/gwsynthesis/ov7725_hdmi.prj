@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW2A-18" package="PBGA484" speed="8" partNumber="GW2A-LV18PG484C8/I7"/>
+    <FileList>
+        <File path="C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\src\cmos_capture_data.v" type="verilog"/>
+        <File path="C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\src\ddr3_fifo_ctrl.v" type="verilog"/>
+        <File path="C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\src\ddr3_fifo_ctrl_top.v" type="verilog"/>
+        <File path="C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\src\ddr3_memory_interface\ddr3_memory_interface.v" type="verilog"/>
+        <File path="C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\src\ddr3_rw.v" type="verilog"/>
+        <File path="C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\src\ddr3_top.v" type="verilog"/>
+        <File path="C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\src\dvi_tx_top\dvi_tx_top.v" type="verilog"/>
+        <File path="C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\src\fifo_top\fifo_top_rd.v" type="verilog"/>
+        <File path="C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\src\fifo_top_wr\fifo_top_wr.v" type="verilog"/>
+        <File path="C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\src\gowin_rpll\gowin_rpll_325.v" type="verilog"/>
+        <File path="C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\src\hdmi_top.v" type="verilog"/>
+        <File path="C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\src\i2c_dri.v" type="verilog"/>
+        <File path="C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\src\i2c_ov7725_rgb565_cfg.v" type="verilog"/>
+        <File path="C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\src\ov7725_dri.v" type="verilog"/>
+        <File path="C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\src\ov7725_hdmi.v" type="verilog"/>
+        <File path="C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\src\video_driver.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="dsp_balance" value="0"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\impl\gwsynthesis\ov7725_hdmi.vg"/>
+        <Option type="ram_rw_check" value="1"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

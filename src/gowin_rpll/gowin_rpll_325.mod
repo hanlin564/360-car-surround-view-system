@@ -1,0 +1,31 @@
+-series GW2A
+-device GW2A-55
+-package PBGA484
+-part_number GW2A-LV55PG484C8/I7
+
+
+-mod_name Gowin_rPLL_325
+-file_name gowin_rpll_325
+-path D:/ov7725_hdmi/ov7725_hdmi/src/gowin_rpll/
+-type PLL
+-rPll true
+-file_type vlg
+-dev_type GW2A-55
+-dyn_idiv_sel false
+-idiv_sel 2
+-dyn_fbdiv_sel false
+-fbdiv_sel 13
+-dyn_odiv_sel false
+-odiv_sel 2
+-dyn_da_en false
+-rst_sig true
+-rst_sig_p false
+-fclkin 50
+-clkfb_sel 0
+-en_lock true
+-clkout_bypass false
+-en_clkoutp false
+-clkoutp_bypass false
+-en_clkoutd false
+-clkoutd_bypass false
+-en_clkoutd3 false

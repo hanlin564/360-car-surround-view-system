@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="ov7725_hdmi" Lut="3">
+    <SubModule name="u_Gowin_rPLL_325"/>
+    <SubModule name="u_ddr3_top">
+        <SubModule name="u_DDR3_Memory_Interface_Top" Register="1714" Alu="61" Lut="1402" Bsram="8" Ssram="69"/>
+        <SubModule name="u_ddr3_rw" Register="907" Lut="1627"/>
+        <SubModule name="u_ddr3_fifo_ctrl_top" Register="26" Lut="350">
+            <SubModule name="u_ddr3_fifo_ctrl_1" Register="309" Lut="80">
+                <SubModule name="u_fifo_rd" Register="94" Alu="30" Lut="55" Bsram="4"/>
+                <SubModule name="u_fifo_wr" Register="93" Alu="30" Lut="55" Bsram="4"/>
+            </SubModule>
+            <SubModule name="u_ddr3_fifo_ctrl_2" Register="300" Lut="78">
+                <SubModule name="u_fifo_rd" Register="94" Alu="30" Lut="55" Bsram="4"/>
+                <SubModule name="u_fifo_wr" Register="93" Alu="30" Lut="55" Bsram="4"/>
+            </SubModule>
+            <SubModule name="u_ddr3_fifo_ctrl_3" Register="300" Lut="78">
+                <SubModule name="u_fifo_rd" Register="94" Alu="30" Lut="55" Bsram="4"/>
+                <SubModule name="u_fifo_wr" Register="93" Alu="30" Lut="55" Bsram="4"/>
+            </SubModule>
+            <SubModule name="u_ddr3_fifo_ctrl_4" Register="308" Lut="78">
+                <SubModule name="u_fifo_rd" Register="94" Alu="30" Lut="55" Bsram="4"/>
+                <SubModule name="u_fifo_wr" Register="93" Alu="30" Lut="55" Bsram="4"/>
+            </SubModule>
+        </SubModule>
+    </SubModule>
+    <SubModule name="u_hdmi_top">
+        <SubModule name="u_DVI_TX_Top" Register="73" Alu="72" Lut="216"/>
+        <SubModule name="u_video_driver" Register="21" Alu="10" Lut="54"/>
+    </SubModule>
+    <SubModule name="u_ov7725_dri_1">
+        <SubModule name="u_i2c_cfg" Register="18" Alu="6" Lut="25" Bsram="1"/>
+        <SubModule name="u_i2c_dr" Register="28" Lut="87"/>
+        <SubModule name="u_cmos_capture_data" Register="33" Alu="3" Lut="33"/>
+    </SubModule>
+    <SubModule name="u_ov7725_dri_2">
+        <SubModule name="u_i2c_cfg" Register="18" Alu="6" Lut="25" Bsram="1"/>
+        <SubModule name="u_i2c_dr" Register="28" Lut="94"/>
+        <SubModule name="u_cmos_capture_data" Register="33" Alu="3" Lut="33"/>
+    </SubModule>
+    <SubModule name="u_ov7725_dri_3">
+        <SubModule name="u_i2c_cfg" Register="18" Alu="6" Lut="27" Bsram="1"/>
+        <SubModule name="u_i2c_dr" Register="28" Lut="91"/>
+        <SubModule name="u_cmos_capture_data" Register="33" Alu="3" Lut="33"/>
+    </SubModule>
+    <SubModule name="u_ov7725_dri_4">
+        <SubModule name="u_i2c_cfg" Register="18" Alu="6" Lut="25" Bsram="1"/>
+        <SubModule name="u_i2c_dr" Register="28" Lut="98"/>
+        <SubModule name="u_cmos_capture_data" Register="33" Alu="3" Lut="33"/>
+    </SubModule>
+</Module>

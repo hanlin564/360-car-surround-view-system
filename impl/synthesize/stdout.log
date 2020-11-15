@@ -1,0 +1,23 @@
+
+Starting:    F:\Gowin\Gowin_V1.9.6.02Beta\SynplifyPro\bin64\mbin\synbatch.exe
+Install:     F:\Gowin\Gowin_V1.9.6.02Beta\SynplifyPro
+Hostname:    DESKTOP-CS0086Q
+Date:        Sat Nov 14 16:09:48 2020
+Version:     Q-2020.03G-Beta1
+
+Arguments:   -product synplify_pro -batch -licensetype synplifypro_gowin D:/ov7725_hdmi/ov7725_hdmi/impl/synthesize/ov7725_hdmi.prj
+ProductType: synplify_pro
+
+No such feature exists.
+Feature:       synplifypro_gowin
+License path:  F:\vivado2019.2\Xilinx.lic;
+FlexNet Licensing error:-5,234
+
+License for feature synplifypro_gowin is not available.
+
+Host ID:  "00ff63b258fd 00ff83d46f9b 220db033ae15 200db033ae15 005056c00001 005056c00008 001a7dda7113 00d86172ccf5 200db033ae15"
+Please contact support at https://solvnetplus.synopsys.com/ManageCase?ccf=1
+
+
+Running in Vendor Mode
+

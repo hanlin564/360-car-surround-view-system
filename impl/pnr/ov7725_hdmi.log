@@ -1,0 +1,34 @@
+Reading netlist file: "C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\impl\gwsynthesis\ov7725_hdmi.vg"
+Parsing netlist file "C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\impl\gwsynthesis\ov7725_hdmi.vg" completed
+WARN  (PA1003) : Invalid parameterized value 'GW2A-55'(DEVICE) specified for instance 'rpll_inst'
+WARN  (PA1003) : Invalid parameterized value 'GW2A-55'(DEVICE) specified for instance 'u_PLL'
+Processing netlist completed
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'cam_pclk_4_d' by the specified constraint. And then it may lead to the excessive delay or skew
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'cam_pclk_3_d' by the specified constraint. And then it may lead to the excessive delay or skew
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'cam_pclk_2_d' by the specified constraint. And then it may lead to the excessive delay or skew
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'cam_pclk_1_d' by the specified constraint. And then it may lead to the excessive delay or skew
+[90%] Routing Phase 3 completed
+Placement and routing completed
+Running timing analysis......
+[95%] Timing analysis completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\impl\pnr\ov7725_hdmi.power.html" completed
+Generate file "C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\impl\pnr\ov7725_hdmi.pin.html" completed
+Generate file "C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\impl\pnr\ov7725_hdmi.rpt.html" completed
+Generate file "C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\impl\pnr\ov7725_hdmi.rpt.txt" completed
+Generate file "C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\impl\pnr\ov7725_hdmi.tr.html" completed
+Sun Nov 15 13:50:50 2020
+

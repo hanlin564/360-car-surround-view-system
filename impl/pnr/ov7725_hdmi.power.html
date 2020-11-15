@@ -1,0 +1,686 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ENhttp://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Power Analysis Report</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+div#main_wrapper { width: 100%; }
+div#content { margin-left: 350px; margin-right: 30px; }
+div#catalog_wrapper {position: fixed; top: 30px; width: 350px; float: left; }
+div#catalog ul { list-style-type: none; }
+div#catalog li { text-align: left; list-style-type:circle; color: #0084ff; margin-top: 3px; margin-bottom: 3px; }
+div#catalog a { display:inline-block; text-decoration: none; color: #0084ff; font-weight: bold; padding: 3px; }
+div#catalog a:visited { color: #0084ff; }
+div#catalog a:hover { color: #fff; background: #0084ff; }
+hr { margin-top: 30px; margin-bottom: 30px; }
+h1, h3 { text-align: center; }
+h1 {margin-top: 50px; }
+table, th, td {white-space:pre;  border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { padding: 5px 5px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table.summary_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.thermal_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.Configure_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.detail_table th.label {  min-width: 8%; width: 8%; }
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="catalog_wrapper">
+<div id="catalog">
+<ul>
+<li><a href="#Message" style=" font-size: 16px;">Power Messages</a>
+</li>
+<li><a href="#Summary" style=" font-size: 16px;">Power Summary</a>
+<ul>
+<li><a href="#Power_Info" style=" font-size: 14px;">Power Information</a></li>
+<li><a href="#Thermal_Info" style=" font-size: 14px;">Thermal Information</a></li>
+<li><a href="#Configure_Info" style=" font-size: 14px;">Configure Information</a></li>
+<li><a href="#Supply_Summary" style=" font-size: 14px;">Supply Information</a></li>
+</ul>
+</li>
+<li><a href="#Detail" style=" font-size: 16px;">Power Details</a>
+<ul>
+<li><a href="#By_Block_Type" style=" font-size: 14px;">Power By Block Type</a></li>
+<li><a href="#By_Hierarchy" style=" font-size: 14px;">Power By Hierarchy</a></li>
+<li><a href="#By_Clock_Domain" style=" font-size: 14px;">Power By Clock Domain</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- catalog -->
+</div><!-- catalog_wrapper -->
+<div id="content">
+<h1><a name="Message">Power Messages</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Report Title</td>
+<td>Gowin Power Analysis Report</td>
+</tr>
+<tr>
+<td class="label">Design File</td>
+<td>C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\impl\gwsynthesis\ov7725_hdmi.vg</td>
+</tr>
+<tr>
+<td class="label">Physical Constraints File</td>
+<td>C:\Users\13062\Desktop\ov7725_hdmi\ov7725_hdmi\ov7725_hdmi\src\ov7725_hdmi.cst</td>
+</tr>
+<tr>
+<td class="label">Timing Constraints File</td>
+<td>---</td>
+</tr>
+<tr>
+<td class="label">GOWIN Version</td>
+<td>V1.9.6.02Beta</td>
+</tr>
+<tr>
+<td class="label">Part Number</td>
+<td>GW2A-LV18PG484C8/I7</td>
+</tr>
+<tr>
+<td class="label">Created Time</td>
+<td>Sun Nov 15 13:50:49 2020
+</td>
+</tr>
+<tr>
+<td class="label">Legal Announcement</td>
+<td>Copyright (C)2014-2020 Gowin Semiconductor Corporation. All rights reserved.</td>
+</tr>
+</table>
+<h1><a name="Summary">Power Summary</a></h1>
+<h2><a name="Power_Info">Power Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Total Power (mW)</td>
+<td>1212.324</td>
+</tr>
+<tr>
+<td class="label">Quiescent Power (mW)</td>
+<td>53.772</td>
+</tr>
+<tr>
+<td class="label">Dynamic Power (mW)</td>
+<td>1158.552</td>
+</tr>
+</table>
+<h2><a name="Thermal_Info">Thermal Information:</a></h2>
+<table class="summary_table">
+<tr style="color: #FF0000;">
+<td class="label">Junction Temperature</td>
+<td>85.000</td>
+</tr>
+<tr>
+<td class="label">Theta JA</td>
+<td>54.900</td>
+</tr>
+<tr>
+<td class="label">Max Allowed Ambient Temperature</td>
+<td>18.443</td>
+</tr>
+</table>
+<h2><a name="Configure_Info">Configure Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Default IO Toggle Rate</td>
+<td>0.125</td>
+</tr>
+<td class="label">Default Remain Toggle Rate</td>
+<td>0.125</td>
+</tr>
+<tr>
+<td class="label">Use Vectorless Estimation</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Filter Glitches</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Related Vcd File</td>
+<td></td>
+</tr>
+<tr>
+<td class="label">Related Saif File</td>
+<td></td>
+</tr>
+<tr>
+<td class="label">Use Custom Theta JA</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Air Flow</td>
+<td>LFM_0</td>
+</tr>
+<tr>
+<td class="label">Heat Sink</td>
+<td>None</td>
+</tr>
+<tr>
+<td class="label">Use Custom Theta SA</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Board Thermal Model</td>
+<td>None</td>
+</tr>
+<tr>
+<td class="label">Use Custom Theta JB</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Ambient Temperature</td>
+<td>25.000
+</tr>
+</table>
+<h2><a name="Supply_Summary">Supply Information:</a></h2>
+<table class="summary_table">
+<tr>
+<th class="label">Voltage Source</th>
+<th class="label">Voltage</th>
+<th class="label">Dynamic Current(mA)</th>
+<th class="label">Quiescent Current(mA)</th>
+<th class="label">Power(mW)</th>
+</tr>
+<tr>
+<td>VCC</td>
+<td>1.000</td>
+<td>1100.061</td>
+<td>37.800</td>
+<td>1137.861</td>
+</tr>
+<tr>
+<td>VCCX</td>
+<td>2.500</td>
+<td>9.349</td>
+<td>3.353</td>
+<td>31.755</td>
+</tr>
+<tr>
+<td>VCCO15</td>
+<td>1.500</td>
+<td>5.397</td>
+<td>1.845</td>
+<td>10.864</td>
+</tr>
+<tr>
+<td>VCCO25</td>
+<td>2.500</td>
+<td>6.801</td>
+<td>0.185</td>
+<td>17.467</td>
+</tr>
+<tr>
+<td>VCCO33</td>
+<td>3.300</td>
+<td>3.036</td>
+<td>1.320</td>
+<td>14.377</td>
+</tr>
+</table>
+<h1><a name="Detail">Power Details</a></h1>
+<h2><a name="By_Block_Type">Power By Block Type:</a></h2>
+<table class="detail_table">
+<tr>
+<th class="label">Block Type</th>
+<th class="label">Total Power(mW)</th>
+<th class="label">Static Power(mW)</th>
+<th class="label">Average Toggle Rate(millions of transitions/sec)</th>
+</tr>
+<tr>
+<td>Logic</td>
+<td>63.093</td>
+<td>NA</td>
+<td>7.290</td>
+</tr>
+<tr>
+<td>IO</td>
+<td>88.288
+<td>19.416
+<td>23.304
+</tr>
+<tr>
+<td>BSRAM</td>
+<td>415.332
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>PLL</td>
+<td>54.916
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>DLL</td>
+<td>46.080
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>DQS</td>
+<td>44.100
+<td>NA</td>
+<td>NA</td>
+</tr>
+</table>
+<h2><a name="By_Hierarchy">Power By Hierarchy:</a></h2>
+<table class="detail_table">
+<tr>
+<th class="label">Hierarchy Entity</th>
+<th class="label">Total Power(mW)</th>
+<th class="label">Block Dynamic Power(mW)</th>
+<th class="label">Routing Dynamic Power(mW)</th>
+</tr>
+<tr>
+<td>ov7725_hdmi</td>
+<td>825.040</td>
+<td>314.129(314.112)</td>
+<td>510.911(504.262)</td>
+<tr>
+<td>ov7725_hdmi/u_Gowin_rPLL_325/</td>
+<td>36.131</td>
+<td>33.996(0.000)</td>
+<td>2.135(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/</td>
+<td>717.382</td>
+<td>265.009(265.009)</td>
+<td>452.373(452.373)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/</td>
+<td>275.231</td>
+<td>142.405(142.400)</td>
+<td>132.826(132.792)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/</td>
+<td>275.192</td>
+<td>142.400(142.400)</td>
+<td>132.792(132.792)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_ddr_phy_top/</td>
+<td>208.042</td>
+<td>135.644(114.459)</td>
+<td>72.399(69.499)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_ddr_phy_top/u_ddr_init/</td>
+<td>15.561</td>
+<td>2.640(0.000)</td>
+<td>12.921(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_ddr_phy_top/u_ddr_phy_wd/</td>
+<td>168.397</td>
+<td>111.819(65.674)</td>
+<td>56.578(55.091)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_ddr_phy_top/u_ddr_phy_wd/data_lane_gen[0].u_ddr_phy_data_lane/</td>
+<td>67.518</td>
+<td>39.706(39.580)</td>
+<td>27.812(27.643)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_ddr_phy_top/u_ddr_phy_wd/data_lane_gen[0].u_ddr_phy_data_lane/u_ddr_phy_data_io/</td>
+<td>26.353</td>
+<td>22.085(0.000)</td>
+<td>4.269(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_ddr_phy_top/u_ddr_phy_wd/data_lane_gen[0].u_ddr_phy_data_lane/u_in_fifo/</td>
+<td>21.319</td>
+<td>8.712(0.000)</td>
+<td>12.606(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_ddr_phy_top/u_ddr_phy_wd/data_lane_gen[0].u_ddr_phy_data_lane/u_out_fifo/</td>
+<td>19.551</td>
+<td>8.783(0.000)</td>
+<td>10.768(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_ddr_phy_top/u_ddr_phy_wd/data_lane_gen[1].u_ddr_phy_data_lane/</td>
+<td>38.810</td>
+<td>23.817(23.374)</td>
+<td>14.993(14.797)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_ddr_phy_top/u_ddr_phy_wd/data_lane_gen[1].u_ddr_phy_data_lane/u_ddr_phy_data_io/</td>
+<td>25.885</td>
+<td>22.050(0.000)</td>
+<td>3.835(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_ddr_phy_top/u_ddr_phy_wd/data_lane_gen[1].u_ddr_phy_data_lane/u_in_fifo/</td>
+<td>5.114</td>
+<td>0.485(0.000)</td>
+<td>4.629(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_ddr_phy_top/u_ddr_phy_wd/data_lane_gen[1].u_ddr_phy_data_lane/u_out_fifo/</td>
+<td>7.172</td>
+<td>0.839(0.000)</td>
+<td>6.333(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_ddr_phy_top/u_ddr_phy_wd/u_ddr_phy_cmd_lane/</td>
+<td>6.452</td>
+<td>0.746(0.527)</td>
+<td>5.706(2.561)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_ddr_phy_top/u_ddr_phy_wd/u_ddr_phy_cmd_lane/u_cmd_fifo/</td>
+<td>3.088</td>
+<td>0.527(0.000)</td>
+<td>2.561(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_ddr_phy_top/u_ddr_phy_wd/u_fifo_ctrl/</td>
+<td>5.248</td>
+<td>0.966(0.000)</td>
+<td>4.282(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_ddr_phy_top/u_ddr_phy_wd/u_mem_sync/</td>
+<td>2.737</td>
+<td>0.439(0.000)</td>
+<td>2.298(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_gwmc_top/</td>
+<td>67.150</td>
+<td>6.757(5.443)</td>
+<td>60.393(45.065)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_gwmc_top/gw_cmd0/</td>
+<td>7.199</td>
+<td>0.877(0.000)</td>
+<td>6.322(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_gwmc_top/gw_rd_data0/</td>
+<td>17.183</td>
+<td>0.974(0.000)</td>
+<td>16.209(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_gwmc_top/gw_wr_data0/</td>
+<td>11.950</td>
+<td>1.719(1.708)</td>
+<td>10.232(9.765)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_gwmc_top/gw_wr_data0/wr_fifo/</td>
+<td>11.474</td>
+<td>1.708(0.000)</td>
+<td>9.765(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_gwmc_top/gwmc_bank_ctrl/</td>
+<td>10.795</td>
+<td>1.312(0.000)</td>
+<td>9.483(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_gwmc_top/gwmc_rank_ctrl/</td>
+<td>2.411</td>
+<td>0.399(0.000)</td>
+<td>2.011(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_gwmc_top/gwmc_timing_ctrl/</td>
+<td>0.970</td>
+<td>0.161(0.000)</td>
+<td>0.809(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/</td>
+<td>357.556</td>
+<td>112.176(110.219)</td>
+<td>245.380(234.515)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_1/</td>
+<td>86.424</td>
+<td>27.575(25.715)</td>
+<td>58.849(34.903)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_1/u_fifo_rd/</td>
+<td>29.015</td>
+<td>11.246(11.246)</td>
+<td>17.769(17.769)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_1/u_fifo_rd/fifo_inst/</td>
+<td>29.015</td>
+<td>11.246(0.000)</td>
+<td>17.769(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_1/u_fifo_wr/</td>
+<td>31.603</td>
+<td>14.469(14.469)</td>
+<td>17.134(17.134)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_1/u_fifo_wr/fifo_inst/</td>
+<td>31.603</td>
+<td>14.469(0.000)</td>
+<td>17.134(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_2/</td>
+<td>86.649</td>
+<td>27.541(25.715)</td>
+<td>59.108(36.416)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_2/u_fifo_rd/</td>
+<td>25.616</td>
+<td>11.246(11.246)</td>
+<td>14.371(14.371)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_2/u_fifo_rd/fifo_inst/</td>
+<td>25.616</td>
+<td>11.246(0.000)</td>
+<td>14.371(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_2/u_fifo_wr/</td>
+<td>36.515</td>
+<td>14.469(14.469)</td>
+<td>22.046(22.046)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_2/u_fifo_wr/fifo_inst/</td>
+<td>36.515</td>
+<td>14.469(0.000)</td>
+<td>22.046(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_3/</td>
+<td>88.626</td>
+<td>27.541(25.715)</td>
+<td>61.084(35.395)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_3/u_fifo_rd/</td>
+<td>28.259</td>
+<td>11.246(11.246)</td>
+<td>17.014(17.014)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_3/u_fifo_rd/fifo_inst/</td>
+<td>28.259</td>
+<td>11.246(0.000)</td>
+<td>17.014(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_3/u_fifo_wr/</td>
+<td>32.851</td>
+<td>14.469(14.469)</td>
+<td>18.381(18.381)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_3/u_fifo_wr/fifo_inst/</td>
+<td>32.851</td>
+<td>14.469(0.000)</td>
+<td>18.381(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_4/</td>
+<td>83.036</td>
+<td>27.562(25.715)</td>
+<td>55.473(33.111)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_4/u_fifo_rd/</td>
+<td>26.137</td>
+<td>11.246(11.246)</td>
+<td>14.891(14.891)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_4/u_fifo_rd/fifo_inst/</td>
+<td>26.137</td>
+<td>11.246(0.000)</td>
+<td>14.891(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_4/u_fifo_wr/</td>
+<td>32.689</td>
+<td>14.469(14.469)</td>
+<td>18.220(18.220)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_fifo_ctrl_top/u_ddr3_fifo_ctrl_4/u_fifo_wr/fifo_inst/</td>
+<td>32.689</td>
+<td>14.469(0.000)</td>
+<td>18.220(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ddr3_top/u_ddr3_rw/</td>
+<td>84.594</td>
+<td>10.427(0.000)</td>
+<td>74.167(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_hdmi_top/</td>
+<td>21.936</td>
+<td>5.742(5.742)</td>
+<td>16.194(16.194)</td>
+<tr>
+<td>ov7725_hdmi/u_hdmi_top/u_DVI_TX_Top/</td>
+<td>17.481</td>
+<td>4.837(4.837)</td>
+<td>12.644(12.644)</td>
+<tr>
+<td>ov7725_hdmi/u_hdmi_top/u_DVI_TX_Top/rgb2dvi_inst/</td>
+<td>17.481</td>
+<td>4.837(4.837)</td>
+<td>12.644(12.644)</td>
+<tr>
+<td>ov7725_hdmi/u_hdmi_top/u_DVI_TX_Top/rgb2dvi_inst/TMDS8b10b_inst_b/</td>
+<td>5.663</td>
+<td>1.591(0.000)</td>
+<td>4.072(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_hdmi_top/u_DVI_TX_Top/rgb2dvi_inst/TMDS8b10b_inst_g/</td>
+<td>5.601</td>
+<td>1.623(0.000)</td>
+<td>3.978(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_hdmi_top/u_DVI_TX_Top/rgb2dvi_inst/TMDS8b10b_inst_r/</td>
+<td>6.217</td>
+<td>1.623(0.000)</td>
+<td>4.594(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_hdmi_top/u_video_driver/</td>
+<td>4.455</td>
+<td>0.905(0.000)</td>
+<td>3.550(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ov7725_dri_1/</td>
+<td>9.660</td>
+<td>2.306(2.306)</td>
+<td>7.354(7.354)</td>
+<tr>
+<td>ov7725_hdmi/u_ov7725_dri_1/u_cmos_capture_data/</td>
+<td>4.017</td>
+<td>0.697(0.000)</td>
+<td>3.321(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ov7725_dri_1/u_i2c_cfg/</td>
+<td>2.401</td>
+<td>1.090(0.000)</td>
+<td>1.310(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ov7725_dri_1/u_i2c_dr/</td>
+<td>3.242</td>
+<td>0.520(0.000)</td>
+<td>2.723(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ov7725_dri_2/</td>
+<td>10.801</td>
+<td>2.348(2.348)</td>
+<td>8.453(8.453)</td>
+<tr>
+<td>ov7725_hdmi/u_ov7725_dri_2/u_cmos_capture_data/</td>
+<td>4.679</td>
+<td>0.697(0.000)</td>
+<td>3.983(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ov7725_dri_2/u_i2c_cfg/</td>
+<td>2.422</td>
+<td>1.092(0.000)</td>
+<td>1.330(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ov7725_dri_2/u_i2c_dr/</td>
+<td>3.700</td>
+<td>0.560(0.000)</td>
+<td>3.140(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ov7725_dri_3/</td>
+<td>10.911</td>
+<td>2.343(2.343)</td>
+<td>8.568(8.568)</td>
+<tr>
+<td>ov7725_hdmi/u_ov7725_dri_3/u_cmos_capture_data/</td>
+<td>4.964</td>
+<td>0.697(0.000)</td>
+<td>4.268(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ov7725_dri_3/u_i2c_cfg/</td>
+<td>2.326</td>
+<td>1.102(0.000)</td>
+<td>1.224(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ov7725_dri_3/u_i2c_dr/</td>
+<td>3.621</td>
+<td>0.545(0.000)</td>
+<td>3.076(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ov7725_dri_4/</td>
+<td>11.554</td>
+<td>2.368(2.368)</td>
+<td>9.185(9.185)</td>
+<tr>
+<td>ov7725_hdmi/u_ov7725_dri_4/u_cmos_capture_data/</td>
+<td>5.026</td>
+<td>0.697(0.000)</td>
+<td>4.330(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ov7725_dri_4/u_i2c_cfg/</td>
+<td>2.434</td>
+<td>1.092(0.000)</td>
+<td>1.342(0.000)</td>
+<tr>
+<td>ov7725_hdmi/u_ov7725_dri_4/u_i2c_dr/</td>
+<td>4.093</td>
+<td>0.579(0.000)</td>
+<td>3.514(0.000)</td>
+</table>
+<h2><a name="By_Clock_Domain">Power By Clock Domain:</a></h2>
+<table class="detail_table">
+<tr>
+<th class="label">Clock Domain</th>
+<th class="label">Clock Frequency(Mhz)</th>
+<th class="label">Total Dynamic Power(mW)</th>
+</tr>
+<tr>
+<td>u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_ddr_phy_top/clkdiv/CLKOUT.default_gen_clk</td>
+<td>50.000</td>
+<td>358.489</td>
+</tr>
+<tr>
+<td>sys_clk.default_clk</td>
+<td>50.000</td>
+<td>80.712</td>
+</tr>
+<tr>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+<td>65.000</td>
+<td>108.543</td>
+</tr>
+<tr>
+<td>DEFAULT_CLK</td>
+<td>100.000</td>
+<td>183.448</td>
+</tr>
+<tr>
+<td>u_Gowin_rPLL_325/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>325.000</td>
+<td>2.331</td>
+</tr>
+<tr>
+<td>u_ddr3_top/u_DDR3_Memory_Interface_Top/gw3mc_top/u_ddr_phy_top/u_PLL/CLKOUT.default_gen_clk</td>
+<td>200.000</td>
+<td>46.755</td>
+</tr>
+<tr>
+<td>NO CLOCK DOMAIN</td>
+<td>0.000</td>
+<td>44.100</td>
+</tr>
+</table>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

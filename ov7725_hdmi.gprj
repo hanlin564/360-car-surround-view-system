@@ -1,0 +1,26 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2A-18" pn="GW2A-LV18PG484C8/I7">gw2a18-004</Device>
+    <FileList>
+        <File path="src/cmos_capture_data.v" type="file.verilog" enable="1"/>
+        <File path="src/ddr3_fifo_ctrl.v" type="file.verilog" enable="1"/>
+        <File path="src/ddr3_fifo_ctrl_top.v" type="file.verilog" enable="1"/>
+        <File path="src/ddr3_memory_interface/ddr3_memory_interface.v" type="file.verilog" enable="1"/>
+        <File path="src/ddr3_rw.v" type="file.verilog" enable="1"/>
+        <File path="src/ddr3_top.v" type="file.verilog" enable="1"/>
+        <File path="src/dvi_tx_top/dvi_tx_top.v" type="file.verilog" enable="1"/>
+        <File path="src/fifo_top/fifo_top_rd.v" type="file.verilog" enable="1"/>
+        <File path="src/fifo_top_wr/fifo_top_wr.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/gowin_rpll_325.v" type="file.verilog" enable="1"/>
+        <File path="src/hdmi_top.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c_dri.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c_ov7725_rgb565_cfg.v" type="file.verilog" enable="1"/>
+        <File path="src/ov7725_dri.v" type="file.verilog" enable="1"/>
+        <File path="src/ov7725_hdmi.v" type="file.verilog" enable="1"/>
+        <File path="src/video_driver.v" type="file.verilog" enable="1"/>
+        <File path="src/ov7725_hdmi.cst" type="file.cst" enable="1"/>
+    </FileList>
+</Project>

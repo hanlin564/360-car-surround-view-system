@@ -1,0 +1,49 @@
+# project files
+add_file -verilog "D:/ov7725_hdmi/ov7725_hdmi/src/ov7725_hdmi.v"
+add_file -verilog "D:/ov7725_hdmi/ov7725_hdmi/src/cmos_capture_data.v"
+add_file -verilog "D:/ov7725_hdmi/ov7725_hdmi/src/ddr3_fifo_ctrl.v"
+add_file -verilog "D:/ov7725_hdmi/ov7725_hdmi/src/ddr3_fifo_ctrl_top.v"
+add_file -verilog "D:/ov7725_hdmi/ov7725_hdmi/src/ddr3_rw.v"
+add_file -verilog "D:/ov7725_hdmi/ov7725_hdmi/src/ddr3_top.v"
+add_file -verilog "D:/ov7725_hdmi/ov7725_hdmi/src/hdmi_top.v"
+add_file -verilog "D:/ov7725_hdmi/ov7725_hdmi/src/i2c_dri.v"
+add_file -verilog "D:/ov7725_hdmi/ov7725_hdmi/src/i2c_ov5640_rgb565_cfg.v"
+add_file -verilog "D:/ov7725_hdmi/ov7725_hdmi/src/ov5640_dri.v"
+add_file -verilog "D:/ov7725_hdmi/ov7725_hdmi/src/video_driver.v"
+add_file -verilog "D:/ov7725_hdmi/ov7725_hdmi/src/ddr3_memory_interface/ddr3_memory_interface.v"
+add_file -verilog "D:/ov7725_hdmi/ov7725_hdmi/src/dvi_tx_top/dvi_tx_top.v"
+add_file -verilog "D:/ov7725_hdmi/ov7725_hdmi/src/fifo_top/fifo_top_rd.v"
+add_file -verilog "D:/ov7725_hdmi/ov7725_hdmi/src/fifo_top_wr/fifo_top_wr.v"
+add_file -verilog "D:/ov7725_hdmi/ov7725_hdmi/src/gowin_rpll/gowin_rpll_325.v"
+
+# implementation: "rev_1"
+impl -add rev_1 -type fpga
+
+# device options
+set_option -technology GOWIN-GW2A
+set_option -part GW2A_55
+set_option -package PBGA484
+set_option -speed_grade -8
+
+set_option -frequency auto
+set_option -maxfan 10000
+set_option -disable_io_insertion 0
+set_option -update_models_cp 0
+set_option -rw_check_on_ram 1
+set_option -run_prop_extract 1
+set_option -symbolic_fsm_compiler 1
+set_option -resource_sharing 1
+set_option -pipe 1
+set_option -retiming 0
+set_option -write_apr_constraint 1
+set_option -vlog_std v2001
+set_option -compiler_compatible 0
+set_option -multi_file_compilation_unit 1
+set_option -looplimit 2000
+set_option -fix_gated_and_generated_clocks 1
+set_option -library_path F:/Gowin/Gowin_V1.9.6.02Beta/IDE/simlib/hardware_core/gw2a/prim_syn.v
+# set result format/file
+project -result_file "ov7725_hdmi.vm"
+impl -active "rev_1"
+project -run -clean
+
